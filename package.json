@@ -1,0 +1,31 @@
+{
+  "name": "sample_revision",
+  "version": "1.0.0",
+  "description": "SPAのリビジョンを管理してリビジョンが上がった場合は自動でリロードさせるサンプル",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "yarn run clean && yarn run --config webpack",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "okkuyama@yahoo.co.jp",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.0.0",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.6.1",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.6.1"
+  }
+}
